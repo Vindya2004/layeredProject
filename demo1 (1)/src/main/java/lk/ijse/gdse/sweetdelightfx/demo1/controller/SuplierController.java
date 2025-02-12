@@ -65,7 +65,6 @@ public class SuplierController implements Initializable {
     }
 
     SupplierBO supplierBO = (SupplierBO) BOFactory.getInstance().getBO(BOFactory.BOType.SUPPLIER);
-   // SupplierDAO supplierDao = (SupplierDAO) DAOFactory.getInstance().getDAO(DAOFactory.DAOType.SUPPLIER);
 
     @FXML
     void OnActionSave(ActionEvent event) {

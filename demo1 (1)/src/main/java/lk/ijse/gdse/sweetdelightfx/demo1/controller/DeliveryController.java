@@ -62,7 +62,7 @@ public class DeliveryController implements Initializable {
 
     private DeliveryDAOImpl delmodel;
 
-//    DeliveryDAO deliveryDAO = (DeliveryDAO) DAOFactory.getInstance().getDAO(DAOFactory.DAOType.DELIVERY);
+
 
     DeliveryBO deliveryBO = (DeliveryBO) BOFactory.getInstance().getBO(BOFactory.BOType.DELIVERY);
 

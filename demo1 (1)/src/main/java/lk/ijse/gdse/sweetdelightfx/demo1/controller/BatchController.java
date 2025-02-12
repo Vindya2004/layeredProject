@@ -57,7 +57,7 @@ public class BatchController implements Initializable {
 
     private BatchDAOImpl batchModel;
 
-  //  BatchDAO batchDAO = new BatchDAOImpl();
+
 
     BatchBO batchBO = (BatchBO) BOFactory.getInstance().getBO(BOFactory.BOType.BATCH);
 

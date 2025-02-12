@@ -121,9 +121,7 @@ public class PaymentController implements Initializable {
 
     private PaymentDAOImpl paymentModel;
 
-   // SupplierPaymentDAO supplierPaymentDAO = (SupplierPaymentDAO) DAOFactory.getInstance().getDAO(DAOFactory.DAOType.SUPPLIERPAYMENT);
-  //  EmployeeSalaryDAO employeeSalaryDAO = (EmployeeSalaryDAO) DAOFactory.getInstance().getDAO(DAOFactory.DAOType.EMPLOYEESALARY);
-//    PaymentDAO paymentDAO = (PaymentDAO) DAOFactory.getInstance().getDAO(DAOFactory.DAOType.PAYMENT);
+
     PaymentBO paymentBO= (PaymentBO) BOFactory.getInstance().getBO(BOFactory.BOType.PAYMENT);
     EmployeeSalaryBO employeeSalaryBO = (EmployeeSalaryBO) BOFactory.getInstance().getBO(BOFactory.BOType.EMPLOYEESALARY);
     SupplierPaymentBO supplierPaymentBO = (SupplierPaymentBO) BOFactory.getInstance().getBO(BOFactory.BOType.SUPPLIERPAYMENT);

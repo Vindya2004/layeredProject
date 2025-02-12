@@ -53,7 +53,6 @@ public class EmployeeController implements Initializable {
 
     EmployeeBO employeeBO =(EmployeeBO) BOFactory.getInstance().getBO(BOFactory.BOType.EMPLOYEE);
 
-   // EmployeeDAO employeeDAO = (EmployeeDAO) DAOFactory.getInstance().getDAO(DAOFactory.DAOType.EMPLOYEE);
 
     private EmployeeDAOImpl empModel;
 

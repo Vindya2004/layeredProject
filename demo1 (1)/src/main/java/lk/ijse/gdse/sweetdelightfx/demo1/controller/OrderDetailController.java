@@ -50,25 +50,7 @@ public class OrderDetailController implements Initializable {
 
     @FXML
     void deleteOnAction(ActionEvent event) {
-//        String id = ord_delOrderId.getText();
-//
-//        int qty = Integer.parseInt(ord_delQuantity.getText());
-//
-//        OrderDetailDto orderDetailDto =new  OrderDetailDto(id,"",qty);
-//
-//        try{
-//            boolean rasp = orderDetailModel.deletetOrderDetails(orderDetailDto);
-//            if (rasp) {
-//                new Alert(Alert.AlertType.INFORMATION, "Order Details delete Sucsess...!").show();
-//                loadTableOrderDetail();
-//                clearDetailsOrderDetail();
-//            } else {
-//                new Alert(Alert.AlertType.ERROR, "Fail to delete order details...!").show();
-//            }
-//        } catch (SQLException e) {
-//            //throw new RuntimeException(e);
-//            System.out.println(e);
-//        }
+
 
     }
 
@@ -79,70 +61,17 @@ public class OrderDetailController implements Initializable {
     }
 
     private void loadTableOrderDetail() throws SQLException {
-//        ArrayList<OrderDetailDto> orderDetailDtos = orderDetailModel.loadTblOrderDetails();
-//
-//        ObservableList<OrderDetailTM> orderDetailTMS = FXCollections.observableArrayList();
-//
-//
-//        for (OrderDetailDto orderDetailDto : orderDetailDtos) {
-//            OrderDetailTM orderDetailTM = new OrderDetailTM(
-//                    orderDetailDto.getOrderId(),
-//                    orderDetailDto.getProductId(),
-//                    orderDetailDto.getQuantity()
-//            );
-//
-//
-//
-//            orderDetailTMS.add(orderDetailTM);
-//        }
-//
-//        tblOrderDetail.setItems(orderDetailTMS);
+
     }
 
     @FXML
     void saveOnAction(ActionEvent event) {
-//      String id = ord_delOrderId.getText();
-//      String productId = ord_delProductId.getText();
-//      int quantity = Integer.parseInt(ord_delQuantity.getText());
-//
-//        OrderDetailDto orderDetailDto = new OrderDetailDto(id, productId, quantity);
-//
-//        try{
-//            boolean rasp = orderDetailModel.insertOrderDetails(orderDetailDto);
-//            if (rasp) {
-//                new Alert(Alert.AlertType.INFORMATION, "Order Details save Sucsess...!").show();
-//                loadTableOrderDetail();
-//                clearDetailsOrderDetail();
-//            } else {
-//                new Alert(Alert.AlertType.ERROR, "Fail to save order details...!").show();
-//            }
-//        } catch (SQLException e) {
-//            //throw new RuntimeException(e);
-//            System.out.println(e);
-//        }
+
     }
 
     @FXML
     void updateOnAction(ActionEvent event) {
-//        String id = ord_delOrderId.getText();
-//        String productId = ord_delProductId.getText();
-//        int quantity = Integer.parseInt(ord_delQuantity.getText());
-//
-//        OrderDetailDto orderDetailDto = new OrderDetailDto(id, productId, quantity);
-//
-//        try{
-//            boolean rasp = orderDetailModel.updateOrderDetails(orderDetailDto);
-//            if (rasp) {
-//                new Alert(Alert.AlertType.INFORMATION, "Order Details update Sucsess...!").show();
-//                loadTableOrderDetail();
-//                clearDetailsOrderDetail();
-//            } else {
-//                new Alert(Alert.AlertType.ERROR, "Fail to update order details...!").show();
-//            }
-//        } catch (SQLException e) {
-//            //throw new RuntimeException(e);
-//            System.out.println(e);
-//        }
+
 
     }
 

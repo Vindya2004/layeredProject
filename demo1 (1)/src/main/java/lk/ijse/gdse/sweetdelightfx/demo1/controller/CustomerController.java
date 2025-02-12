@@ -81,7 +81,7 @@ public class CustomerController implements Initializable {
 
     CustomerBO customerBO = (CustomerBO) BOFactory.getInstance().getBO(BOFactory.BOType.CUSTOMER);
 
-    //CustomerDAO customerDao = (CustomerDAO) DAOFactory.getInstance().getDAO(DAOFactory.DAOType.CUSTOMER);
+
 
     public CustomerController() {
         customerModel = new CustomerDAOImpl();

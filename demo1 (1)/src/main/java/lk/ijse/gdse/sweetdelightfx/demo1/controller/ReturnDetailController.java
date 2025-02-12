@@ -57,7 +57,6 @@ public class ReturnDetailController implements Initializable {
         returnModel = new ReturnDAOImpl();
     }
 
-   // ReturnDAO returnDAO = (ReturnDAO) DAOFactory.getInstance().getDAO(DAOFactory.DAOType.RETURN);
     ReturnBO returnBO = (ReturnBO) BOFactory.getInstance().getBO(BOFactory.BOType.RETURN);
 
     @FXML
