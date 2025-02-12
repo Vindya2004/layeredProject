@@ -5,22 +5,14 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface ProductDAO extends CrudDAO<Product> {
-    // boolean insertProduct(ProductDto productDto) throws SQLException ;
 
-   //  boolean updateProduct(ProductDto productDto) throws SQLException ;
+     Double getpriceValues(String id) throws SQLException ;    //Product
 
-   //  boolean deleteProduct(ProductDto productDto) throws SQLException ;
+     int getCount(String productId) throws SQLException ;//product
 
-   //  ArrayList<ProductDto> loadTablePro() throws SQLException ;
+     List<String> getAllProductId() throws SQLException ;
 
-    // String loadNExtId() throws SQLException ;
-    public Double getpriceValues(String id) throws SQLException ;    //Product
-
-    public int getCount(String productId) throws SQLException ;//product
-
-    public List<String> getAllProductId() throws SQLException ;
-
-    public double getPrice(String productId) throws SQLException ;
+     double getPrice(String productId) throws SQLException ;
 
 
     int selectQTY(String productId) throws SQLException ;

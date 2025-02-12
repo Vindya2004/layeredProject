@@ -5,5 +5,5 @@ import java.sql.SQLException;
 
 public interface OrderDAO extends CrudDAO<Order> {
     boolean orderSave(String orderId, String orderDate, String customerId)throws SQLException;
-    // public String loadNextId() throws SQLException ;
+
 }
