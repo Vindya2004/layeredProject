@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1040.0" prefWidth="1463.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.sweetdelightfx.demo1.controller.DeliveryController">
+   <children>
+      <TableView fx:id="tableDel" layoutX="101.0" layoutY="98.0" onMouseClicked="#mouseClickDelTbl" prefHeight="726.0" prefWidth="1058.0">
+        <columns>
+          <TableColumn fx:id="deliveryId" prefWidth="311.99998474121094" text="Delivery Id" />
+          <TableColumn fx:id="deliveryDate" prefWidth="379.2000732421875" text="Delivery Date" />
+            <TableColumn fx:id="destination" prefWidth="361.5999755859375" text="Destination" />
+        </columns>
+      </TableView>
+      <AnchorPane prefHeight="66.0" prefWidth="1463.0" style="-fx-background-color: #b9a18f;">
+         <children>
+            <Label layoutX="578.0" layoutY="8.0" text="Delivery Details">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1156.0" style="-fx-background-color: ffd6a3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.sweetdelightfx.demo1.controller.ProductCategoryController">
+   <children>
+      <Label layoutX="401.0" layoutY="30.0" text="Product Category Details">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="134.0" text="Category Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="210.0" text="Category Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCategoryId" layoutX="238.0" layoutY="121.0" prefHeight="48.0" prefWidth="867.0" />
+      <TextField fx:id="txtCategoryName" layoutX="238.0" layoutY="197.0" prefHeight="48.0" prefWidth="867.0" />
+      <TableView fx:id="tblCategory" layoutX="58.0" layoutY="333.0" prefHeight="514.0" prefWidth="813.0">
+        <columns>
+          <TableColumn fx:id="categiryId" prefWidth="387.0" text="Category Id" />
+          <TableColumn fx:id="categoryName" prefWidth="425.0" text="Category Name" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEmpSave" layoutX="901.0" layoutY="615.0" mnemonicParsing="false" onAction="#OnActionSave" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #75bfcd;" text="Save" textFill="#221f1f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEmpUpdate" layoutX="901.0" layoutY="708.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #30a1a1;" text="Update" textFill="#070707">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEmpDelete" layoutX="901.0" layoutY="799.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #75bfcd;" text="Delete" textFill="#111010">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

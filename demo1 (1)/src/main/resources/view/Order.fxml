@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1040.0" prefWidth="1463.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.sweetdelightfx.demo1.controller.OrderController">
+   <children>
+      <Label layoutX="66.0" layoutY="89.0" text="Order Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="162.0" text="Order Date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="398.0" text="Count">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="230.0" text="Customer Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOrderId" layoutX="203.0" layoutY="84.0" prefHeight="38.0" prefWidth="344.0" text="1" />
+      <TextField fx:id="txtCount" layoutX="203.0" layoutY="393.0" onAction="#countOnAction" prefHeight="38.0" prefWidth="344.0" />
+      <TextField fx:id="txtdate" layoutX="203.0" layoutY="157.0" prefHeight="38.0" prefWidth="344.0" promptText="DD/MM/YYYY" />
+      <TableView fx:id="tblOrder" layoutX="57.0" layoutY="625.0" onMouseClicked="#MOuseClick" prefHeight="86.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="orderId" prefWidth="132.79998397827148" text="Order Id" />
+            <TableColumn fx:id="orderDate" prefWidth="145.6000213623047" text="Order Date" />
+          <TableColumn fx:id="customerId" prefWidth="173.5999755859375" text="Customer Id" />
+            <TableColumn fx:id="paymentId" prefWidth="188.79998779296875" text="Product" />
+            <TableColumn fx:id="amount" prefWidth="188.79998779296875" text="Count" />
+            <TableColumn fx:id="price" prefWidth="170.39996337890625" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="571.0" layoutY="162.0" text="Total">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPrice" layoutX="716.0" layoutY="157.0" prefHeight="38.0" prefWidth="344.0" />
+      <Button layoutX="850.0" layoutY="728.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #30a1a1; -fx-background-radius: 20;" text="Update" textFill="#1e1d1d">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button layoutX="611.0" layoutY="728.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #42a86c; -fx-background-radius: 20;" text="Place Order" textFill="#202221">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <AnchorPane layoutX="1.0" prefHeight="66.0" prefWidth="1463.0" style="-fx-background-color: #b9a18f;">
+         <children>
+            <Label layoutX="609.0" layoutY="21.0" text="Placing Orders ">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="571.0" layoutY="89.0" text="Payment Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPrice1" layoutX="716.0" layoutY="84.0" prefHeight="38.0" prefWidth="344.0" text="P001" />
+      <ComboBox fx:id="pMethod" layoutX="716.0" layoutY="211.0" prefHeight="38.0" prefWidth="344.0" />
+      <Label layoutX="571.0" layoutY="216.0" text="Payment Mathod">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="570.0" layoutY="279.0" text="Destination">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDestination" layoutX="716.0" layoutY="274.0" prefHeight="38.0" prefWidth="344.0" />
+      <Label layoutX="569.0" layoutY="417.0" text="Delivery Charge">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDelCharge" layoutX="716.0" layoutY="411.0" onAction="#OnActionDelivary" prefHeight="38.0" prefWidth="344.0" />
+      <Label layoutX="45.0" layoutY="784.0" prefHeight="21.0" prefWidth="137.0" text="Total       :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtTotal1" layoutX="191.0" layoutY="784.0" text="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="846.0" prefHeight="21.0" prefWidth="103.0" text="Paid         :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtPaid" layoutX="191.0" layoutY="846.0" text="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="555.0" layoutY="81.0" prefHeight="395.0" prefWidth="3.0" style="-fx-background-color: black;" />
+      <AnchorPane layoutX="14.0" layoutY="609.0" prefHeight="3.0" prefWidth="1355.0" style="-fx-background-color: black;" />
+      <Label layoutX="399.0" layoutY="784.0" prefHeight="21.0" prefWidth="111.0" text="Balance     :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtPaid1" layoutX="524.0" layoutY="784.0" text="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="569.0" layoutY="353.0" text="Delivery Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDelId" layoutX="716.0" layoutY="347.0" prefHeight="38.0" prefWidth="344.0" text="D001" />
+      <Button layoutX="922.0" layoutY="489.0" mnemonicParsing="false" onAction="#addCartOnAction" prefHeight="30.0" prefWidth="137.0" style="-fx-background-color: e16767;" text="Add to cart" textFill="#111010" />
+      <Label layoutX="65.0" layoutY="450.0" text="Add to Cart">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblAddCart" layoutX="58.0" layoutY="535.0" prefHeight="66.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="productId" prefWidth="296.79998779296875" text="Product" />
+          <TableColumn fx:id="count" prefWidth="187.20001220703125" text="Count" />
+            <TableColumn fx:id="unitPrice" prefWidth="188.0" text="Unit Price" />
+            <TableColumn fx:id="total" prefWidth="165.5999755859375" text="Total" />
+            <TableColumn fx:id="removebtn" prefWidth="159.99993896484375" text="Action" />
+        </columns>
+      </TableView>
+      <Label layoutX="66.0" layoutY="296.0" text="Product ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="19.0" layoutY="477.0" prefHeight="3.0" prefWidth="1355.0" style="-fx-background-color: black;" />
+      <Label layoutX="64.0" layoutY="344.0" text="Qty On Hand">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="qtyHand" layoutX="203.0" layoutY="344.0" prefHeight="16.0" prefWidth="45.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="txtProductId" layoutX="203.0" layoutY="293.0" onAction="#productOnAction" prefHeight="38.0" prefWidth="344.0" />
+      <ComboBox fx:id="txtcustId" layoutX="203.0" layoutY="225.0" prefHeight="38.0" prefWidth="344.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acnDashboard" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.sweetdelightfx.demo1.controller.DashBoardController">
+   <children>
+      <AnchorPane fx:id="acn1" layoutX="600.0" prefHeight="1042.0" prefWidth="1374.0" style="-fx-background-color: #b9a18f;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="38.0" prefWidth="1470.0" style="-fx-background-color: #0f2257;">
+               <children>
+                  <Label layoutX="325.0" layoutY="4.0" prefHeight="32.0" prefWidth="292.0" text="Welcome to the dashboard" textFill="#f8f6f6">
+                     <font>
+                        <Font name="FreeMono Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="42.0" layoutY="581.0" prefHeight="462.0" prefWidth="1436.0" style="-fx-background-color: lightgray;">
+               <children>
+                  <Label layoutX="364.0" layoutY="26.0" prefHeight="43.0" prefWidth="334.0" text="Always In Good Taste">
+                     <font>
+                        <Font name="Chilanka Regular" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="109.0" prefHeight="27.0" prefWidth="1000.0" text="At sweet Delight,It's our mission to bring you the largest selection of cakes on the market.Along with a vast wealth of ">
+                     <font>
+                        <Font name="Chilanka Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="136.0" prefHeight="27.0" prefWidth="1000.0" text="knowledge in the products we sell,Sweet delight carries everything you could possible imagine and more.We are here   ">
+                     <font>
+                        <Font name="Chilanka Regular" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="82.0" layoutY="163.0" prefHeight="27.0" prefWidth="1000.0" text="for our customers,and want each one of them to have unique,one-of-a-kind experience at our amazing cake shop.">
+                     <font>
+                        <Font name="Chilanka Regular" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane layoutX="1.0" prefHeight="1040.0" prefWidth="642.0" style="-fx-background-color: #0f2257;">
+         <children>
+            <Button fx:id="btanEmployee" layoutX="276.0" layoutY="149.0" mnemonicParsing="false" onAction="#employeeOnAction" prefHeight="52.0" prefWidth="352.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Employee Management">
+               <font>
+                  <Font name="FreeMono Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCustomer" layoutX="276.0" layoutY="68.0" mnemonicParsing="false" onAction="#customerOnAction" prefHeight="52.0" prefWidth="352.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Customer Management">
+               <font>
+                  <Font name="FreeMono Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPayment" layoutX="276.0" layoutY="244.0" mnemonicParsing="false" onAction="#paymentOnAction" prefHeight="52.0" prefWidth="352.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Payment Management">
+               <font>
+                  <Font name="FreeMono Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDelivery" layoutX="276.0" layoutY="329.0" mnemonicParsing="false" onAction="#DeliveryOnAction" prefHeight="52.0" prefWidth="352.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Delivery View">
+               <font>
+                  <Font name="FreeMono Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReturn" layoutX="276.0" layoutY="416.0" mnemonicParsing="false" onAction="#returnOnAction" prefHeight="52.0" prefWidth="352.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Return Management">
+               <font>
+                  <Font name="FreeMono Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnProduct" layoutX="276.0" layoutY="599.0" mnemonicParsing="false" onAction="#productOnAction" prefHeight="52.0" prefWidth="352.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Product Management">
+               <font>
+                  <Font name="FreeMono Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnOrders" layoutX="276.0" layoutY="514.0" mnemonicParsing="false" onAction="#ordersOnAction" prefHeight="52.0" prefWidth="352.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Placing Orders">
+               <font>
+                  <Font name="FreeMono Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSupplier" layoutX="276.0" layoutY="789.0" mnemonicParsing="false" onAction="#supplierOnAction" prefHeight="52.0" prefWidth="352.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Supplier Management">
+               <font>
+                  <Font name="FreeMono Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBatch" layoutX="276.0" layoutY="690.0" mnemonicParsing="false" onAction="#batchOnAction" prefHeight="52.0" prefWidth="352.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="View Batch Number">
+               <font>
+                  <Font name="FreeMono Bold" size="24.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="36.0" layoutX="286.0" layoutY="339.0">
+               <image>
+                  <Image url="@../Image/icons8-delivery-motorbike-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="291.0" layoutY="156.0">
+               <image>
+                  <Image url="@../Image/icons8-employee-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="282.0" layoutY="68.0">
+               <image>
+                  <Image url="@../Image/icons8-customer-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="282.0" layoutY="251.0">
+               <image>
+                  <Image url="@../Image/icons8-cash-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="292.0" layoutY="430.0">
+               <image>
+                  <Image url="@../Image/icons8-return-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="24.0" layoutX="292.0" layoutY="508.0">
+               <image>
+                  <Image url="@../Image/icons8-calling-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="28.0" layoutX="291.0" layoutY="609.0">
+               <image>
+                  <Image url="@../Image/icons8-cake-64.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="293.0" layoutY="704.0">
+               <image>
+                  <Image url="@../Image/icons8-batch-24.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="286.0" layoutY="796.0">
+               <image>
+                  <Image url="@../Image/icons8-supplier-50.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="387.0" layoutY="860.0" mnemonicParsing="false" onAction="#logOutOnAction" text="Log Out">
+               <font>
+                  <Font name="Chilanka Regular" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

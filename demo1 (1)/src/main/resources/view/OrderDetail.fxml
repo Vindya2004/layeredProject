@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1040.0" prefWidth="1463.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.sweetdelightfx.demo1.controller.OrderDetailController">
+   <children>
+      <TableView fx:id="tblOrderDetail" layoutX="47.0" layoutY="197.0" prefHeight="372.0" prefWidth="1349.0">
+        <columns>
+          <TableColumn fx:id="productId" prefWidth="429.0" text="Product Id" />
+          <TableColumn fx:id="orderId" prefWidth="488.0" text="Order Id" />
+            <TableColumn fx:id="quantity" prefWidth="467.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <AnchorPane prefHeight="66.0" prefWidth="1463.0" style="-fx-background-color: #b9a18f;">
+         <children>
+            <Label layoutX="599.0" layoutY="17.0" text="Order View">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

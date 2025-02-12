@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1156.0" style="-fx-background-color: ffd6a3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.sweetdelightfx.demo1.controller.Order_batchController">
+   <children>
+      <Label layoutX="485.0" layoutY="37.0" text="Order Batch">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="144.0" text="Order Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="225.0" text="Batch Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="orderBatchOId" layoutX="228.0" layoutY="130.0" prefHeight="48.0" prefWidth="867.0" />
+      <TextField fx:id="orderBatchBId" layoutX="226.0" layoutY="201.0" prefHeight="48.0" prefWidth="867.0" />
+      <Button fx:id="orderBatchDelete" layoutX="917.0" layoutY="806.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #75bfcd;" text="Delete" textFill="#0d0d0d">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="orderBatchUpdate" layoutX="917.0" layoutY="714.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #30a1a1;" text="Update" textFill="#171717">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="orderBatchSave" layoutX="917.0" layoutY="625.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #75bfcd;" text="Save" textFill="#171616">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TableView layoutX="42.0" layoutY="337.0" prefHeight="517.0" prefWidth="824.0">
+        <columns>
+          <TableColumn prefWidth="411.0" text="Order Id" />
+          <TableColumn prefWidth="412.0" text="Batch Id" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancMain" prefHeight="1040.0" prefWidth="1900.0" style="-fx-background-color: #b9a18f;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.sweetdelightfx.demo1.controller.SignPageController">
+   <children>
+      <Button fx:id="btnCreateAccount" layoutX="901.0" layoutY="788.0" mnemonicParsing="false" onAction="#createOnAction" prefHeight="36.0" prefWidth="240.0" style="-fx-background-color: white;" text="Create account" textFill="#b9a18f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane prefHeight="1040.0" prefWidth="762.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="btnUserName" layoutX="242.0" layoutY="212.0" prefHeight="57.0" prefWidth="500.0" promptText="User Name" style="-fx-background-color: f5f5f4;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="btnEmail" layoutX="242.0" layoutY="338.0" prefHeight="57.0" prefWidth="500.0" promptText="Email" style="-fx-background-color: f5f5f4;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="btnPassword" layoutX="242.0" layoutY="456.0" prefHeight="57.0" prefWidth="500.0" promptText="Password" style="-fx-background-color: f5f5f4;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="btnConfirmPassword" layoutX="248.0" layoutY="590.0" prefHeight="57.0" prefWidth="500.0" promptText="Confirm Password" style="-fx-background-color: f5f5f4;">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="200.0" layoutY="78.0" text="Sign Up">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="248.0" layoutY="720.0" prefHeight="21.0" prefWidth="240.0" text="Already have an account?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="475.0" layoutY="714.0" mnemonicParsing="false" onAction="#SlogOnAction" prefHeight="33.0" prefWidth="77.0" style="-fx-background-color: white;" text="Login" textFill="#b9a18f">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ImageView layoutX="242.0" layoutY="168.0">
+               <image>
+                  <Image url="@../Image/icons8-user-24.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="254.0" layoutY="303.0">
+               <image>
+                  <Image url="@../Image/icons8-email-50(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="242.0" layoutY="414.0">
+               <image>
+                  <Image url="@../Image/icons8-password-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="242.0" layoutY="564.0">
+               <image>
+                  <Image url="@../Image/icons8-secure-50.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="242.0" layoutY="199.0" prefHeight="3.0" prefWidth="500.0" style="-fx-background-color: #b9a18f;" />
+            <AnchorPane layoutX="242.0" layoutY="444.0" prefHeight="3.0" prefWidth="500.0" style="-fx-background-color: #b9a18f;" />
+            <AnchorPane layoutX="248.0" layoutY="327.0" prefHeight="3.0" prefWidth="500.0" style="-fx-background-color: #b9a18f;" />
+            <AnchorPane layoutX="248.0" layoutY="588.0" prefHeight="3.0" prefWidth="500.0" style="-fx-background-color: #b9a18f;" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="901.0" layoutY="708.0" prefHeight="18.0" prefWidth="353.0" text="creating an account means you're ok with  " textFill="#f8f5f5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="901.0" layoutY="735.0" prefHeight="18.0" prefWidth="334.0" text="our terms of service and privacy policy " textFill="#f8f5f5">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="1755.0" layoutY="27.0" mnemonicParsing="false" onAction="#onActionBack" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #b9a18f;" />
+      <ImageView fitHeight="33.0" fitWidth="38.0" layoutX="1785.0" layoutY="29.0">
+         <image>
+            <Image url="@../Image/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

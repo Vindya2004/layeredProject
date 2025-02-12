@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1040.0" prefWidth="1447.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.sweetdelightfx.demo1.controller.BatchController">
+   <children>
+      <Label layoutX="48.0" layoutY="111.0" prefHeight="21.0" prefWidth="100.0" text="Batch Id">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="276.0" prefHeight="21.0" prefWidth="100.0" text="Product Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="197.0" prefHeight="21.0" prefWidth="100.0" text="Price">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBatchId" layoutX="248.0" layoutY="97.0" prefHeight="48.0" prefWidth="570.0" />
+      <TextField fx:id="txtBatchPrice" layoutX="248.0" layoutY="183.0" prefHeight="48.0" prefWidth="570.0" />
+      <TextField fx:id="txtProductId" layoutX="248.0" layoutY="262.0" prefHeight="48.0" prefWidth="570.0" />
+      <Button fx:id="btnBatchDelete" layoutX="904.0" layoutY="159.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #30a1a1; -fx-background-radius: 20;" text="Delete" textFill="#161717">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnBatchUpdate" layoutX="904.0" layoutY="238.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #30a1a1; -fx-background-radius: 20;" text="Update" textFill="#030303">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnBatchSave" layoutX="904.0" layoutY="87.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #30a1a1; -fx-background-radius: 20;" text="Save" textFill="#1c1e1e">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TableView fx:id="tblbatch" layoutX="74.0" layoutY="413.0" onMouseClicked="#tblBatchOnClick" prefHeight="594.0" prefWidth="1018.0">
+        <columns>
+          <TableColumn fx:id="batchId" prefWidth="313.6000175476074" text="Batch Id" />
+          <TableColumn fx:id="batchPrice" prefWidth="392.79998779296875" text="Price" />
+            <TableColumn fx:id="productId" prefWidth="336.79998779296875" text="Product Id" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="1.0" prefHeight="66.0" prefWidth="1463.0" style="-fx-background-color: #b9a18f;">
+         <children>
+            <Label layoutX="637.0" layoutY="18.0" prefHeight="30.0" prefWidth="254.0" text="Batch Details">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="904.0" layoutY="310.0" mnemonicParsing="false" onAction="#resetOnAction" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #30a1a1; -fx-background-radius: 20;" text="Reset" textFill="#030303">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

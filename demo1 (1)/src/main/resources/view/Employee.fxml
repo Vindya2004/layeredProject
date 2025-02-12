@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1040.0" prefWidth="1463.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.sweetdelightfx.demo1.controller.EmployeeController">
+   <children>
+      <Button fx:id="btnEmpSave" layoutX="911.0" layoutY="115.0" mnemonicParsing="false" onAction="#OnActionSave" prefHeight="48.0" prefWidth="196.0" style="-fx-background-radius: 20; -fx-background-color: #30a1a1;" text="Save" textFill="#221f1f">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnEmpUpdate" layoutX="911.0" layoutY="195.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="48.0" prefWidth="196.0" style="-fx-background-radius: 20; -fx-background-color: #30a1a1;" text="Update" textFill="#070707">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnEmpDelete" layoutX="911.0" layoutY="285.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="48.0" prefWidth="196.0" style="-fx-background-radius: 20; -fx-background-color: #30a1a1;" text="Delete" textFill="#111010">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="57.0" layoutY="129.0" prefHeight="21.0" prefWidth="148.0" text="Employee Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="208.0" text="Employee Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="295.0" text="Salary">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="379.0" text="Phone Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmpId" layoutX="272.0" layoutY="115.0" onAction="#OnActionId" prefHeight="48.0" prefWidth="453.0" />
+      <TextField fx:id="txtPNumber" layoutX="272.0" layoutY="365.0" prefHeight="48.0" prefWidth="453.0" />
+      <TextField fx:id="txtSalary" layoutX="272.0" layoutY="282.0" prefHeight="48.0" prefWidth="453.0" />
+      <TextField fx:id="txtEmpName" layoutX="272.0" layoutY="195.0" onAction="#OnActionName" prefHeight="48.0" prefWidth="453.0" />
+      <TableView fx:id="tblEmployee" layoutX="48.0" layoutY="456.0" onMouseClicked="#onMousetblEmp" prefHeight="550.0" prefWidth="1074.0">
+        <columns>
+          <TableColumn fx:id="employeeId" prefWidth="235.19999313354492" text="Employee Id" />
+          <TableColumn fx:id="employeeName" prefWidth="236.79998779296875" text="Employee Name" />
+            <TableColumn fx:id="employeeSalary" prefWidth="279.19989013671875" text="Salary" />
+            <TableColumn fx:id="employeePhoneNumber" prefWidth="316.0" text="Phone Number" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEmpDelete1" layoutX="911.0" layoutY="365.0" mnemonicParsing="false" onAction="#resetOnAction" prefHeight="48.0" prefWidth="196.0" style="-fx-background-radius: 20; -fx-background-color: #30a1a1;" text="Reset" textFill="#111010">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="-1.0" prefHeight="66.0" prefWidth="1463.0" style="-fx-background-color: #b9a18f;">
+         <children>
+            <Label layoutX="558.0" layoutY="17.0" text="Employee Management ">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
