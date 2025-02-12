@@ -46,7 +46,7 @@ public class ReturnDAOImpl implements ReturnDAO {
     }
 
     public String loadNExtID() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select return_id from return_detail order by return_id desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT return_id from return_detail order by return_id desc limit 1");  //
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID

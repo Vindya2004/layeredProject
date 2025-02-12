@@ -58,7 +58,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     public String loadNExtID() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select Customer_Id from Customer order by Customer_Id desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT Customer_Id from Customer order by Customer_Id desc limit 1");//
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID
@@ -73,7 +73,7 @@ public class CustomerDAOImpl implements CustomerDAO {
     public List<String> getAllCustId() throws SQLException {//get all customer id for order
         List<String> ssss = new ArrayList<>();
         ResultSet rst = SQLUtil.execute(
-                "select Customer_Id from Customer"
+                "SELECT Customer_Id from Customer"  //
         );
         while (rst.next()) {
             ssss.add(rst.getString(1));

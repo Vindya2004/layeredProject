@@ -22,7 +22,7 @@ public class OrderDAOImpl implements OrderDAO {
 
 
     public ArrayList<AllOrdersTM> load() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select o.Order_Id, o.Ord_date,o.Customer_Id, s.Pro_Id ,s.Qty, s.price  from Orders o JOIN Order_detail s ON o.Order_Id = s.Order_Id");
+        ResultSet rst = SQLUtil.execute("SELECT o.Order_Id, o.Ord_date,o.Customer_Id, s.Pro_Id ,s.Qty, s.price  from Orders o JOIN Order_detail s ON o.Order_Id = s.Order_Id");  //
         ArrayList<AllOrdersTM> allOrders = new ArrayList<>();
         while (rst.next()) {
             AllOrdersTM allOrder = new AllOrdersTM(
@@ -40,7 +40,7 @@ public class OrderDAOImpl implements OrderDAO {
     }
 
     public String getAllPID() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select  Pay_Id  from Payment order by Pay_Id desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT  Pay_Id  from Payment order by Pay_Id desc limit 1");  //
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID
@@ -53,7 +53,7 @@ public class OrderDAOImpl implements OrderDAO {
     }
 
     public String getOID() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select Order_Id from Orders order by Order_Id desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT Order_Id from Orders order by Order_Id desc limit 1");  //
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID
@@ -66,7 +66,7 @@ public class OrderDAOImpl implements OrderDAO {
     }
 
     public String getPId() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select Pay_Id  from Payment order by Pay_Id  desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT Pay_Id  from Payment order by Pay_Id  desc limit 1");  //
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID
@@ -79,7 +79,7 @@ public class OrderDAOImpl implements OrderDAO {
     }
 
     public String getDID() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select Deli_Id from Delivery order by Deli_Id  desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT Deli_Id from Delivery order by Deli_Id  desc limit 1");  //
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID
@@ -93,7 +93,7 @@ public class OrderDAOImpl implements OrderDAO {
 
 
     public String loadNExtID() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select Order_Id from Orders order by Order_Id desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT Order_Id from Orders order by Order_Id desc limit 1"); //
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID

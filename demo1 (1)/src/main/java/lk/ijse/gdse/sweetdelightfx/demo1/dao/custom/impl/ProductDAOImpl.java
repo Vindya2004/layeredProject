@@ -71,7 +71,7 @@ public class ProductDAOImpl implements ProductDAO {
 
     @Override
     public String loadNExtID() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select Pro_Id from Product order by Pro_Id desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT Pro_Id from Product order by Pro_Id desc limit 1");  //
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID
@@ -86,7 +86,7 @@ public class ProductDAOImpl implements ProductDAO {
     public Double getpriceValues(String id) throws SQLException {    //get price of product for order table
         ProductDto d = new ProductDto();
         Connection connection = DBConnection.getInstance().getConnection();
-        String sql = "select Price from Product where Pro_Id = ?";
+        String sql = "SELECT Price from Product where Pro_Id = ?";  //
         PreparedStatement statement = connection.prepareStatement(sql);
         statement.setString(1, id);
         ResultSet rs = statement.executeQuery();
@@ -116,7 +116,7 @@ public class ProductDAOImpl implements ProductDAO {
     public List<String> getAllProductId() throws SQLException {
         List<String> ssss = new ArrayList<>();
         ResultSet rst = SQLUtil.execute(
-                "select Pro_Id from Product"
+                "SELECT Pro_Id from Product"  //
 
         );
         while (rst.next()) {
@@ -127,7 +127,7 @@ public class ProductDAOImpl implements ProductDAO {
 
     public double getPrice(String productId) throws SQLException {
         ResultSet resultSet = SQLUtil.execute(
-                "select Price from Product where Pro_Id=?",
+                "SELECT Price from Product where Pro_Id=?",  //
                 productId
         );
         if (resultSet.next()) {

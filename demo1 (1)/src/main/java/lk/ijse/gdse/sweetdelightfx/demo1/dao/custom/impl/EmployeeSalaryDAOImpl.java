@@ -58,7 +58,7 @@ public class EmployeeSalaryDAOImpl implements EmployeeSalaryDAO {
     }
     public String loadNExtID() throws SQLException {
         System.out.println("loadNExtID");
-        ResultSet rst = SQLUtil.execute("select em_paymentId from Employee_Payment order by em_paymentId desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT em_paymentId from Employee_Payment order by em_paymentId desc limit 1");  //
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID
@@ -70,8 +70,8 @@ public class EmployeeSalaryDAOImpl implements EmployeeSalaryDAO {
         return "E001";
     }
     public List<String> getAllEmpId() throws SQLException {
-        Connection connection = DBConnection.getInstance().getConnection();
-        String sql = "select emp_id from Employee";
+        Connection connection = DBConnection.getInstance().getConnection();  //
+        String sql = "SELECT emp_id from Employee";
         PreparedStatement statement = connection.prepareStatement(sql);
 
         ResultSet rst = statement.executeQuery();

@@ -50,7 +50,7 @@ public class SupplierDAOImpl implements SupplierDAO {
     }
 
     public String loadNExtID() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select Sup_Id from Supplier order by Sup_Id desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT Sup_Id from Supplier order by Sup_Id desc limit 1");  //
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID

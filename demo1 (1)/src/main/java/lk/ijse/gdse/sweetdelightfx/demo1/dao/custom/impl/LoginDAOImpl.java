@@ -10,7 +10,7 @@ import java.util.List;
 public class LoginDAOImpl {
     public boolean saveLogin(LoginDto loginDto) throws SQLException {
         List<String>login = new ArrayList<>();
-        String query = "select * from Admin where Email=? and Password=?";
+        String query = "SELECT * from Admin where Email=? and Password=?";  //
 
         ResultSet rs= SQLUtil.execute(query,
                 loginDto.getEmail(),

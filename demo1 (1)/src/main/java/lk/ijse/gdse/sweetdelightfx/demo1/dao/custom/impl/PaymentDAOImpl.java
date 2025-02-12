@@ -55,7 +55,7 @@ public class PaymentDAOImpl implements PaymentDAO {
     }
 
     public String loadNExtID() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select Pay_Id from Payment order by Pay_Id desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT Pay_Id from Payment order by Pay_Id desc limit 1");  //
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID
@@ -70,7 +70,7 @@ public class PaymentDAOImpl implements PaymentDAO {
 
     public List<String> getAllpayId() throws SQLException {
         Connection connection = DBConnection.getInstance().getConnection();
-        String sql = "select Sup_Id from Supplier";
+        String sql = "SELECT Sup_Id from Supplier";   ///
         PreparedStatement statement = connection.prepareStatement(sql);
 
         ResultSet rst = statement.executeQuery();
@@ -90,7 +90,7 @@ public class PaymentDAOImpl implements PaymentDAO {
 
     public String getPaymentId() throws SQLException { // get payment id for order table
         ResultSet rst = SQLUtil.execute(
-                "select Pay_Id from Payment order by Pay_Id desc limit 1"
+                "SELECT Pay_Id from Payment order by Pay_Id desc limit 1"  //
         );
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID

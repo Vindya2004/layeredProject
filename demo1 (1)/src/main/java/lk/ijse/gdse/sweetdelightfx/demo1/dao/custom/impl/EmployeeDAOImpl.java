@@ -62,7 +62,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
     }
 
     public String loadNExtID() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select Emp_Id from Employee order by Emp_Id desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT Emp_Id from Employee order by Emp_Id desc limit 1");  //
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID

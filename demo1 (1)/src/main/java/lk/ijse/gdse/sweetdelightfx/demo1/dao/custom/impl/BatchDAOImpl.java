@@ -50,7 +50,7 @@ public class BatchDAOImpl implements BatchDAO {
     }
 
     public String loadNExtID() throws SQLException {
-        ResultSet rst = SQLUtil.execute("select Batch_Id from Batch order by Batch_Id desc limit 1");
+        ResultSet rst = SQLUtil.execute("SELECT Batch_Id from Batch order by Batch_Id desc limit 1");//
 
         if (rst.next()) {
             String lastId = rst.getString(1); // Last customer ID

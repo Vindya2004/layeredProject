@@ -69,7 +69,7 @@ public class DeliveryDAOImpl implements DeliveryDAO {
 //    }
 public String getNewDelId() throws SQLException {
     ResultSet rst = SQLUtil.execute(
-            "select Deli_Id from Delivery order by Deli_Id desc limit 1"
+            "SELECT Deli_Id from Delivery order by Deli_Id desc limit 1"  //
     );
     while (rst.next()) {
         String lastId = rst.getString(1); // Last customer ID
